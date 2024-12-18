@@ -1,0 +1,110 @@
+* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Layout */
+#Movielisting, #Review {
+    margin: 20px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Movielisting {
+    flex: 1 1 300px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#Review {
+    flex: 2 1 600px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Movie List */
+#Movielisting ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Movielisting li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#Movielisting li:hover {
+    background-color: white;
+}
+
+#Movielisting button {
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#Movielisting button:hover {
+    background-color: red;
+}
+
+/* Movie Details */
+#posterimage {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#Review h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#Review p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #Movielisting, #Review {
+        flex: 1 1 100%;
+    }
+   
+    #posterimage {
+        max-width: 100%;
+    }
+}
